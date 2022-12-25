@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:quizapp/login_page.dart';
 import 'package:quizapp/screens/home_screen.dart';
+// import 'package:quizapp/screens/login_screen.dart';
 
 //run main method
 void main() {
@@ -19,7 +21,8 @@ class MyApp extends StatelessWidget {
       //remove debug banner
       debugShowCheckedModeBanner: false,
       // set homepage
-      home: HomeScreen(),
+      // home: HomeScreen(),
+      home: LoginPage(),
     );
   }
 }
