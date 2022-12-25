@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:quizapp/screens/home_screen.dart';
+import 'package:quizapp/screens/login_screen.dart';
+// import 'package:quizapp/screens/login_screen.dart';
 
 //run main method
 void main() {
@@ -15,11 +16,12 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
       //remove debug banner
       debugShowCheckedModeBanner: false,
       // set homepage
-      home: HomeScreen(),
+      // home: HomeScreen(),
+      home: LoginScreen(),
     );
   }
 }
