@@ -1,0 +1,2 @@
+- create a separate file to make some variable
+- let's start creating homepage
