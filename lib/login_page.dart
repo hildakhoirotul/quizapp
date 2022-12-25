@@ -15,8 +15,11 @@ const LoginPage({Key? key}) : super(key: key);
               Navigator.pushReplacement(context,
                   MaterialPageRoute(builder: (context) {
                 return HomeScreen();
-              }));
-            }),
+              }
+              )
+              );
+            }
+            ),
       ),
     );
   }
