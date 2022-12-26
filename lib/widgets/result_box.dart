@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:quizapp/constants.dart';
+import 'package:quizapp/screens/login_screen.dart';
 
 class ResultBox extends StatelessWidget {
   const ResultBox({
@@ -55,6 +56,23 @@ class ResultBox extends StatelessWidget {
                   'Start Over',
                   style: TextStyle(
                     color: Colors.blue,
+                    fontSize: 20.0,
+                    letterSpacing: 1.0,
+                  ),
+                ),
+              ),
+              const SizedBox(height: 25.0),
+              GestureDetector(
+                onTap: () {
+                  Navigator.pushReplacement(context,
+                      MaterialPageRoute(builder: (context) {
+                    return LoginScreen();
+                  }));
+                },
+                child: const Text(
+                  'LOGOUT',
+                  style: TextStyle(
+                    color: Colors.red,
                     fontSize: 20.0,
                     letterSpacing: 1.0,
                   ),
